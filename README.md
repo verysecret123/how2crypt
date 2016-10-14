@@ -7,8 +7,8 @@ This repo is for learning various cryptographic concepts and techniques.
 | File | Technique | Applicable CTF Challenges |
 |------|-----------|---------------------------|
 | [modular_arithmetic.py](modular_arithmetic.py) | Introduction to modular arithmetic | |
-| [rsa.py](rsa.py) | Introduction to RSA | |
-| [rsa_exponentfault.py](rsa_exponentfault.py) | Recover the secret exponent when unpadded RSA (non-CRT) is used and random bitflips affect the secret exponent |[Broken box - CSAW quals 2016](https://ctftime.org/task/2825) |
+| [rsa.py](rsa.py) | Introduction to RSA encryption | |
+| [rsa_exponentfault.py](rsa_exponentfault.py) | Recover the secret exponent when unpadded RSA (non-CRT) is used and random bitflips affect the secret exponent |[Broken box - CSAW quals 2016](https://ctftime.org/task/2825]) |
 
 # Elliptic Curve
 
@@ -18,3 +18,8 @@ Try to inline the whole technique in a single `.py` -- it's a lot easier to lear
 
 
 # Other resources
+
+### RSA
+
+[Twenty Years of Attacks on the RSA Cryptosystem](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf)
+
