@@ -7,7 +7,7 @@ def egcd(a, b):
         return (b, 0, 1)
     else:
         g, y, x = egcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+        return (g, x - (b / a) * y, y)
 
 def modinv(a, n):
     g, x, y = egcd(a, n)
