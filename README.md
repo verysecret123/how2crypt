@@ -19,7 +19,10 @@ Try to inline the whole technique in a single `.py` -- it's a lot easier to lear
 
 # Other resources
 
+### General Resources
+
+- This is an online book that introduces many concepts of cryptography: [Cryptography, An Introduction](https://www.cs.bris.ac.uk/~nigel/Crypto_Book/).
+
 ### RSA
 
 [Twenty Years of Attacks on the RSA Cryptosystem](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf)
-
