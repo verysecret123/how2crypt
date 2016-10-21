@@ -3,7 +3,7 @@
 import fractions
 from Crypto.Util.number import getPrime
 from modular_arithmetic import modinv, egcd
-from common import yafu
+from common import yafu, string_to_int, int_to_string
 
 def rsa_enc(m, e, n):
     return pow(m, e, n)
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     print
     print "Encryption demo:"
-    m = int("hello".encode('hex'), 16)
+    m = string_to_int("hello")
     print "... message:", m
     c = rsa_enc(m, e, n)
     print "... encrypted:", c
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     print
     print "Next, let's demonstrate the problem of having a small exponent e."
     print "If we have a small message, the ciphertext won't \"wrap around\", and the modulus won't do anything."
-    m = int("Hi".encode('hex'), 16)
+    m = string_to_int('Hi')
     print "For example, let's say that our message is %d." % m
     c = pow(m, e, n)
     print "This encrypts to %d without wrapping around %d." % (c, n)
@@ -70,4 +70,3 @@ if __name__ == '__main__':
 
     print ""
     print "Those are some naive attacks against unpadded, simple RSA. See other files for other attacks."
-    
